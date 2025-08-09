@@ -1,0 +1,110 @@
+/* Base Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eaf6f6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #4a90e2;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+textarea {
+    resize: none;
+    height: 120px;
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"] {
+    background-color: #4a90e2;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #357ab8;
+}
+
+.clear-btn {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.clear-btn:hover {
+    background-color: #ccc;
+}
+
+/* Response Styling */
+.response {
+    margin-top: 30px;
+    background-color: #f6faff;
+    border-left: 5px solid #4a90e2;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.response h3 {
+    margin-top: 0;
+    color: #4a90e2;
+}
+
+.response p {
+    margin: 8px 0;
+    font-size: 1.05rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        margin: 30px 10px;
+        padding: 20px;
+    }
+
+    textarea {
+        height: 100px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
